@@ -39,13 +39,13 @@ let package = Package(
               "SwiftProtobufPluginLibrary",
               "protoc-gen-swift"]),
     .target(name: "BoringSSL"),
-    .target(name: "Echo",
+    .target(name: "EchoExample",
             dependencies: [
               "SwiftGRPC",
               "SwiftProtobuf",
               "Commander"],
             path: "Sources/Examples/Echo"),
-    .target(name: "Simple",
+    .target(name: "SimpleExample",
             dependencies: ["SwiftGRPC", "Commander"],
             path: "Sources/Examples/Simple"),
     .testTarget(name: "SwiftGRPCTests", dependencies: ["SwiftGRPC"])
